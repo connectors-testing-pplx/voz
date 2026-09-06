@@ -1,0 +1,30 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@voz/compliance": [
+        "../../packages/compliance/src"
+      ],
+      "@voz/flows": [
+        "../../packages/flows/src"
+      ],
+      "@voz/reports": [
+        "../../packages/reports/src"
+      ],
+      "@voz/ui": [
+        "../../packages/ui/src"
+      ],
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "types": [
+      "vite/client"
+    ]
+  },
+  "include": [
+    "src",
+    "../../packages/*/src"
+  ]
+}

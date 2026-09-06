@@ -1,0 +1,26 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "outDir": "./dist",
+    "types": [
+      "node"
+    ],
+    "paths": {
+      "@voz/compliance": [
+        "../../packages/compliance/src"
+      ],
+      "@voz/flows": [
+        "../../packages/flows/src"
+      ],
+      "@voz/reports": [
+        "../../packages/reports/src"
+      ]
+    }
+  },
+  "include": [
+    "src",
+    "../../packages/*/src"
+  ]
+}

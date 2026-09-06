@@ -1,0 +1,17 @@
+{
+  "name": "voz",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Voz - a compliance-first bilingual (EN/ES) A2P messaging platform for U.S. SMS, WhatsApp, and political use cases.",
+  "author": "connectors-testing-pplx",
+  "license": "MIT",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace apps/web",
+    "build": "npm run build --workspace apps/web",
+    "preview": "npm run preview --workspace apps/web"
+  }
+}
